@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1 {width: 100px; height: 50px ; background-color: blueviolet; margin: 20px;}
+        h2 {width: 100px; height: 50px ; background-color: red; margin: 0 auto;}
+        #block-1 {color: cadetblue; background-color: bisque;}
+        #key1 {background-color: coral;}
+        #hi-1 {color: aqua; background-color:brown; width: 100px; height: 50px ;}
+        .num-1 {color: red; background-color: aqua; padding: 20px;}
+        h4 {width: 50px; height: 40px ; margin: 0 auto; border: 2px solid navy; border-radius: 5px ;}
+        h3 {font-size: 62px;}
+        ul {display:block; background-color: gold; border: 2px solid navy;}
+        a {display:inline; background-color: palevioletred;}
+        .q1 {border: 2px solid navy;}
+
+        /* display: flex  - 부모에게 적용하여 자식에게 배치 넣기*/
+        /* .dis { display: flex;
+    justify-content: space-between;} */
+
+    /* row : 가로 방향 */
+    /* .dis { display: flex;
+    justify-content: space-between;} */
+
+    /* column : 세로 방향 */
+    /* .dis {display: flex;
+    flex-direction: column;} */
+
+    /* display: flex에서 justify-content */
+
+    /* flex-start : 왼쪽 정렬 */
+    /* .dis {display: flex;
+    justify-content: flex-start;} */
+
+    /* center : 가운데 정렬 */
+    /* .dis {display: flex;
+    justify-content: center;} */
+
+    /* flex-end : 오른쪽 정렬 */
+    /* .dis {display: flex;
+    justify-content: flex-end;} */
+
+    /* space-between : 양쪽 끝에 배치 */
+    /* .dis {display: flex;
+    justify-content: space-between;} */
+
+    /* space-around : 요소 주변에 같은 간격 */
+        /* .dis {display: flex;
+    justify-content: space-around;} */
+
+    /* display: flex에서 align-items 알아보기 */
+
+        /* flex-start : 위쪽 정렬 */
+    /* .dis {display: flex;
+        align-items: flex-start;} */
+
+        /* center : 세로 가운데 정렬 */
+    /* .dis {display: flex;
+        align-items: center;} */
+
+        /* flex-end : 아래쪽 정렬 */
+    /* .dis {display: flex;
+    align-items: flex-end;} */
+
+    /* gap 알아보기 - 상자 사이의 간격 */
+    /* .dis {display: flex;
+    gap: 20px;} */
+
+    .dis {display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;}
+
+
+    </style>
+</head>
+<body>
+    <!-- 주제나 제목 성격의 텍스트를 작성할 때 사용 -->
+    <h1>제목1</h1>
+    <h2>제목2</h2>
+    <h3>제목3</h3>
+    <h4>제목4</h4>
+    <h5>제목5</h5>
+    <h6>제목6</h6>
+
+    <!-- 텍스트로 문장 또는 단락을 구성할 때 사용 -->
+    <!-- 하나의 문단 -->
+<p class="num-1">
+    안녕하세요.
+    반갑습니다.
+</p>
+
+<!-- 두 개의 문단 -->
+<p id="key1">안녕하세요.</p>
+<p id="key2">반갑습니다.</p>
+
+    <!-- 블록 요소와 인라인 요소를 그룹으로 묶을 때 사용 -->
+    <div> div는 블록 요소와 인라인 요소를 그룹으로 묶을 때 사용. </div>
+    <div id="block-1">
+    <h2>메뉴 소개</h2>
+    <p>아메리카노 - 3,500원</p>
+    <p>카페라떼 - 4,000원</p>
+</div>
+
+    <!-- 인라인 요소를 그룹으로 묶을 때 사용 -->
+    <span> span은 인라인 요소를 그룹으로 묶을 때 사용.</span>
+    <p>
+        오늘은
+        <span id="아메">아메리카노</span>
+        할인 행사를 진행합니다.
+    </p>
+
+    <!-- 링크를 생성할 때 사용 -->
+    <a href="대상 경로" target="링크 연결 방식" title="링크설명"></a>
+    <a href="https://www.naver.com" target="_blank" title="새로운 탭에서 네이버 열기">네이버 바로가기</a>
+    <a href="https://www.youtube.com" target="_self" title="현재 탭에서 유튜브 열기">유튜브 바로가기</a>
+    
+    <!--  이미지를 삽입할 때 사용 -->
+    <!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!모르겠음ㅠㅠㅠㅠㅠㅠㅠㅠㅠㅠㅠㅠㅠㅠㅠㅠㅠㅠㅠㅠㅠㅠ!!!!!!!!! -->
+    <img src="이미지 경로" alt="이미지 설명">
+    <img src="./sticker-reaction.jpg" 
+            alt="스티커 이미지" 
+            width="300">
+        
+
+    <!-- 비순서형 목록을 만들고, 목록 내용을 구성할 때는 li 태그 사용 -->
+    <ul>
+        <li>목록 내용 1</li>
+        <li>목록 내용 2</li>
+        <li>목록 내용 3</li>
+    </ul>
+
+    <!-- 순서형 목록을 만들고, 목록 내용을 구성할 때는 li 태그 사용 -->
+    <ol>
+        <li>목록 내용 1</li>
+        <li>목록 내용 2</li>
+        <li>목록 내용 3</li>
+    </ol>
+
+    <!--  한 줄짜리 입력 요소 생성 -->
+    <p><input type="text" name="글씨창" value="초깃값">글쓰세요.</p>
+    <p><input type="password" name="비밀번호" value="초깃값">비밀번호</p>
+    <p><input type="checkbox" name="체크박스" value="초깃값">
+    <input type="checkbox"> 피자
+    <input type="checkbox"> 치킨
+    <input type="checkbox"> 햄버거
+    </p>
+    <p><input type="radio" name="라디오" value="초깃값"></p>
+    <input type="radio" name="gender"> 남성
+    <input type="radio" name="gender"> 여성
+    <p><input type="button" name="버튼" value="초깃값"></p>
+    <button id="hi-1" type="submit">제출하기</button>
+    <button type="reset">초기화하기</button>
+    <button type="button">버튼 띵동~</button>
+    <p><input type="email" name="이메일" value="초깃값"></p>
+<form action="/login" method="post">
+
+    <h4>로그인</h4>
+
+    <input
+        type="text"
+        name="username"
+        placeholder="아이디"
+        required
+    >
+
+    <input
+        type="password"
+        name="password"
+        placeholder="비밀번호"
+        required
+    >
+
+    <button type="submit">로그인</button>
+
+<!-- 표 -->
+
+<table border="1">
+    <tr>
+        <th>이름</th>
+        <th>나이</th>
+        <th>주소</th>
+    </tr>
+
+    <tr>
+        <td>홍길동</td>
+        <td>100</td>
+        <td>조선</td>
+    </tr>
+</table>
+<!-- display -->
+<div class="dis">  <!-- 부모 -->
+    <div class="q1">상자 1</div>     <!-- 자식 -->
+    <div class="q1">상자 2</div>     <!-- 자식 -->
+    <div class="q1">상자 3</div>     <!-- 자식 -->
+</div>
+</form>
+
+
+</body>
+</html>
